@@ -43,8 +43,7 @@ Add the binary in to your PATH. "C:\Windows\System32"
 ## Configure
 In order for kubectl to find and access a Kubernetes cluster, it needs a kubeconfig file. By default, kubectl configuration is located at ```~/.kube/config```
 
-Ours looks like this 
-
+Ours looks like this:
 ```
 apiVersion: v1
 clusters:
@@ -65,7 +64,6 @@ users:
   user:
     client-certificate-data: ClientCertGoesHere@@@      
 ```
-
 <b>NOTE:</b> 10.0.0.15 is the VIP for our kubernetes cluster we definied in our konvoy config
 
 ---
