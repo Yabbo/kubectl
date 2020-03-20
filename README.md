@@ -1,6 +1,6 @@
 # KUBECTL
 
-## Installing
+## Install
 Full instructions can be found https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ### Ubuntu/Debian
@@ -40,6 +40,33 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.17.0/bin/w
 Add the binary in to your PATH. "C:\Windows\System32"
 
 ---
+## Configure
+In order for kubectl to find and access a Kubernetes cluster, it needs a kubeconfig file. By default, kubectl configuration is located at ```~/.kube/config```
 
+Ours looks like this 
 
+```
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: HashedCertGoesHere=
+    server: https://10.0.0.15:6443
+  name: vanillasystem
+contexts:
+- context:
+    cluster: vanillasystem
+    user: kubernetes-admin
+  name: kubernetes-admin@vanillasystem
+current-context: kubernetes-admin@vanillasystem
+kind: Config
+preferences: {}
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: ClientCertGoesHere@@@      
+```
+
+NOTE: 10.0.0.15 is the VIP for our kubernetes cluster we definied in our konvoy config
+
+---
 
