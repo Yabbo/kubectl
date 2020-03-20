@@ -66,7 +66,7 @@ users:
     client-certificate-data: ClientCertGoesHere@@@      
 ```
 
-NOTE: 10.0.0.15 is the VIP for our kubernetes cluster we definied in our konvoy config
+<b>NOTE:</b> 10.0.0.15 is the VIP for our kubernetes cluster we definied in our konvoy config
 
 ---
 
