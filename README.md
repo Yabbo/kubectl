@@ -67,7 +67,7 @@ users:
     client-certificate-data: ClientCertGoesHere@@@      
 ```
 
-If you have a seprate config file you will need to specify the fule everytime you run kubectl:
+If you have a seprate config file you will need to specify the fule everytime you run kubectl
 ```
 kubectl --kubeconfig admin.conf
 ```
