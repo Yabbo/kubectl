@@ -45,7 +45,7 @@ In order for kubectl to find and access a Kubernetes cluster, it needs a kubecon
 
 Inside the config file it should look similar to this:
 
-<b>NOTE:</b> 10.0.0.15 is the VIP for our kubernetes cluster we definied in our konvoy config
+<b>NOTE:</b> 10.0.0.15 is the VIP for our kubernetes cluster. you can replace this with any of the master nodes as well.
 ```
 apiVersion: v1
 clusters:
