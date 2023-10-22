@@ -79,7 +79,7 @@ kubectl
 ---
 ## Kubectl cp
 
-To copy a directory ```/home/yabbo/html/*``` from the local system to the container to run from ```/usr/share/nginx/html/*```
+To copy a directory ```/home/yabbo/html/*``` from the local system to the container to run from ```/usr/share/nginx/html/*``` Note the container we are coping to is ```my-nginx-dep-768b657d56-x66mb```
 ```
 kubectl cp /home/yabbo/html my-nginx-dep-768b657d56-x66mb:/usr/share/nginx/
 ```
